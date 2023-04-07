@@ -13,6 +13,22 @@ div{
     background: linear-gradient(to bottom, #037ccb 0%,  #82ccef 100%);
 }
 
+.cloud{
+    right: 0;
+    position: absolute;
+    height: 30%;
+    animation: cloud 10s linear infinite;
+}
+
+@keyframes cloud {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(20%);
+    }
+    
+}
 .sea{
     height: 30%;
     width: 200%;
