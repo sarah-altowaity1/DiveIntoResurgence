@@ -4,10 +4,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
     text-decoration: none;
-    background: #1f2028;
+    /* background: #1f2028; */
 
 }
-
+body{
+    position: relative;
+    background: url("../img/wall3.jpg");
+    background-size: 100%;
+}
 
 section{
     position: relative;
