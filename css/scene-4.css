@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+/* 
+div{
+    position: absolute;
+} */
 section{
     position: relative;
     width: 100%;
@@ -49,4 +52,26 @@ section span:before{
         opacity: 1;
     }
     
+}
+.navigation{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.navigation .arrow-back{
+    padding-left: 2%;
+    margin-right: auto;
+    font-size: 300%;
+    color: white;
+}
+.navigation .arrow-forward{
+    padding-right: 2%;
+    margin-left: auto;
+    font-size: 300%;
+    color: white
+}
+ion-icon {
+    filter: drop-shadow(0 0 4px white);
 }

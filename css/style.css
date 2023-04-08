@@ -85,7 +85,7 @@ section .duck{
 
 @media (max-width: 700px) {
     section .duck{
-        bottom:7%;
+        bottom:15%;
     }
     section .wave{
         bottom: -20px;
