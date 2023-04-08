@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+    text-decoration: none;
+}
+.end-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/pool2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+}
+.end-page .navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.end-page .navigation .arrow-back{
+    padding-left: 2%;
+    margin-right: auto;
+    font-size: 300%;
+    color: white;
+}
+ion-icon {
+    filter: drop-shadow(0 0 4px white);
+  }
