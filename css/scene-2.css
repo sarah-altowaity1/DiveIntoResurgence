@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+    text-decoration: none;
+}
+
+.scene-2{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/olympic-pool.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+
+}
+
+.scene-2 .navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.scene-2 .navigation .arrow-back{
+    padding-left: 2%;
+    margin-right: auto;
+    font-size: 300%;
+    color: white;
+}
+.scene-2 .navigation .arrow-forward{
+    padding-right: 2%;
+    margin-left: auto;
+    font-size: 300%;
+    color: white
+}
+ion-icon {
+    filter: drop-shadow(0 0 4px white);
+  }
