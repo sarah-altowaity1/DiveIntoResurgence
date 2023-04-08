@@ -5,50 +5,64 @@
     font-family: 'Poppins', 'sans-serif';
     text-decoration: none;
 }
+
 .end-page{
     height: 100vh;
     width: 100%;
     background-image: url("../img/pool2.jpg");
     background-size: cover;
     display: flex;
-    align-items: center; 
-}
-.end-page .navigation{
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .centered-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .centered-text p {
+    font-size: 2.0rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .back-to-home-button {
+    display: block;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .back-to-home-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .end-page .navigation{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-}
-.end-page .navigation .arrow-back{
+  }
+  
+  .end-page .navigation .arrow-back{
     padding-left: 2%;
     margin-right: auto;
     font-size: 300%;
     color: white;
-}
-ion-icon {
+  }
+  
+  ion-icon {
     filter: drop-shadow(0 0 4px white);
   }
-
-.back-to-home-button {
-    width: 330px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: #000;
-    border: none;
-    border-radius: 25px;
-    margin: 50px auto;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-}
-
-.back-to-home-button:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
