@@ -15,5 +15,5 @@ $(document).ready(function() {
   // Rewind audio when it finishes playing
   sound.addEventListener("ended", function() {
       sound.currentTime = 0;
-  });
+    });
   });

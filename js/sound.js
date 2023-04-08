@@ -10,4 +10,4 @@ $(document).ready(function() {
     sound.addEventListener("ended", function() {
         sound.currentTime = 0;
     });
-  });
+});
