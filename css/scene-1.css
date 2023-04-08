@@ -1,0 +1,21 @@
+/* Styling for all elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+    text-decoration: none;
+}
+
+body{
+    background-color: aqua;
+}
+
+.scene-1{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/water6.jpg");
+    /* background: center center; */
+    /* background-color: black; */
+    background-size: cover;
+}
