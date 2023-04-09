@@ -12,7 +12,7 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/jquery.ripples.js"></script>
     <!-- <script src="js/script.js"> </script> -->
-    <script src="js/scene-2.js"></script>
+    <script src="js/sound.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Scene 2</title>
 </head>
@@ -21,19 +21,65 @@
     <audio src="audio/Chapter2_Final.mp3" id="sound" loop="loop" autoplay="autoplay" type="audio/mp3"></audio>
 
     <div class="scene-2">  
+        <div class="kid" > 
+            <a href="#">
+                <img id="kid" src="img/kid-swimming.png" alt=""  width="70%">
+            </a>
+        </div>
         <div class="navigation">
             <a class="arrow-back" href="scene-1.html">
                 <ion-icon name="arrow-back-circle-outline"></ion-icon>
             </a> 
-            <div class="kid"> 
-                <a href="#">
-                    <img src="img/kid-swimming.png" alt="" id="kid" width="70%">
-                </a>
-        </div>
             <a class="arrow-forward" href="scene-3.html">
                 <ion-icon name="arrow-forward-circle-outline"></ion-icon>    
             </a>
         </div>
+        <div class='instructions'> 
+            <center>
+                <h1 id="heading">
+                    PRESS THE SPACE BAR TO MOVE SWIMMER!
+                </h1>
+            </center>
+        </div>
+
     </div>
+
+
+    <script>
+        function isElementOffScreen(element) {
+        const rect = element.getBoundingClientRect();
+        const viewWidth = window.innerWidth || document.documentElement.clientWidth;
+        const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        return (
+            rect.bottom < 0 ||
+            rect.right < 0 ||
+            rect.left > viewWidth ||
+            rect.top > viewHeight
+        );
+        }
+
+        function move() {
+            if (event.keyCode === 32 || event.which === 32) {
+                // code to be executed when space bar is pressed
+                var kidpos = document.getElementById('kid').offsetLeft
+                kidpos = kidpos + 50
+                document.getElementById('kid').style.left = kidpos + 'px'
+                if (isElementOffScreen(document.getElementById('kid'))) {
+                    const myHeading = document.getElementById("heading");
+                    myHeading.textContent = "YOU DID IT!";
+                    document.getElementById('kid').style.left = 0
+                    if (myHeading.textContent != "YOU DID IT!") {
+                        document.addEventListener('keydown', move)
+                    } else {
+                        document.removeEventListener('keydown', move)
+                    }
+                }
+            }
+        }
+
+        document.addEventListener('keydown', move);
+
+    </script>
 </body>
 </html>

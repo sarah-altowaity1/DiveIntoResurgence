@@ -15,8 +15,6 @@ body{
     height: 100vh;
     width: 100%;
     background-image: url("../img/water6.jpg");
-    /* background: center center; */
-    /* background-color: black; */
     background-size: cover;
     display: flex;
     align-items: center; 
