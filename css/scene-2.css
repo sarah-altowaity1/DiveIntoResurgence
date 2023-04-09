@@ -5,7 +5,6 @@
     font-family: 'Poppins', 'sans-serif';
     text-decoration: none;
 }
-
 .scene-2{
     height: 100vh;
     width: 100%;
@@ -13,9 +12,7 @@
     background-size: cover;
     display: flex;
     align-items: center; 
-
 }
-
 .scene-2 .navigation{
     width: 100%;
     display: flex;
@@ -37,3 +34,4 @@
 ion-icon {
     filter: drop-shadow(0 0 4px white);
   }
+  
