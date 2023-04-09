@@ -11,10 +11,12 @@ Image by <a href="https://www.freepik.com/free-vector/flat-yellow-rubber-duck-ha
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="css/style.css"> 
     <title>Dive Into Resurgence</title>
 </head>
 <body>
+
     <div class = 'button'>
         <center>
             <h1> 
@@ -52,9 +54,19 @@ Image by <a href="https://www.freepik.com/free-vector/flat-yellow-rubber-duck-ha
         <div class="wave wave3"> </div>
         <div class="wave wave4"> </div>
 
-    </section> 
-    <!-- <div class="wave-container">
-        <img src="img/wave.png" alt="Wave" class="wave">
-    </div> -->
+    </section>
+    <ion-icon name="alert-circle-outline" onclick="toggleSummary()"></ion-icon> 
+    <div class ="overlay-summary">
+        <div class="close-btn" onclick="toggleSummary()">&times;</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Imperdiet sed euismod nisi porta. Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Consequat interdum varius sit amet mattis vulputate enim. Quis eleifend quam adipiscing vitae. Pharetra diam sit amet nisl. Elit scelerisque mauris pellentesque pulvinar. Tellus cras adipiscing enim eu turpis egestas pretium. Magna eget est lorem ipsum dolor sit amet consectetur.
+
+            Aliquet eget sit amet tellus cras adipiscing enim. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Sem integer vitae justo eget magna fermentum iaculis eu non. Consequat id porta nibh venenatis cras. Eu lobortis elementum nibh tellus molestie nunc non blandit. Nisl purus in mollis nunc. Ut sem viverra aliquet eget. Nulla pharetra diam sit amet. Quis commodo odio aenean sed. Ut venenatis tellus in metus vulputate eu scelerisque felis. Sagittis purus sit amet volutpat consequat mauris nunc congue. Ipsum a arcu cursus vitae congue. Mauris rhoncus aenean vel elit. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Posuere sollicitudin aliquam ultrices sagittis orci. Lorem dolor sed viverra ipsum nunc aliquet. Integer feugiat scelerisque varius morbi enim. Neque aliquam vestibulum morbi blandit cursus.
+         
+    </div>
+    <script>
+        function toggleSummary(){
+            document.body.classList.toggle('activeSummary');
+        }
+    </script>
 </body>
 </html>

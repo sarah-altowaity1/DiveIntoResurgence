@@ -4,12 +4,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    background: #1f2028;
+
 
 }
 body{
     position: relative;
-    background: url("../img/wall3.jpg");
+    background: #1f2028;
+    /* background: url("../img/wall3.jpg"); */
     background-size: 100vh;
 }
 
@@ -194,7 +195,48 @@ section .wave.wave4{
     }
 } 
 
+.overlay-summary{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding-top: 10%;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
 
+}
+
+.overlay-summary .close-btn{
+    position: absolute;
+    top:2%;
+    right: 4%;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3em;
+}
+.overlay-summary p{
+    padding: 10%;
+    color: #f8ff79;
+    font-weight: 200;
+    font-size: 1em;
+}
+ion-icon {
+    position: absolute;
+    font-size: 200%;
+    top:2%;
+    right: 4%;
+    color: white;
+    cursor: pointer;
+}
+
+body.activeSummary .overlay-summary{
+    z-index: 2;
+    opacity: 1;
+}
 /*
 section .waves{
     position: relative;
