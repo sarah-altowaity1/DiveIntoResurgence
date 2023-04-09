@@ -4,12 +4,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
     text-decoration: none;
+    background: #1f2028;
 }
 
 .end-page{
     height: 100vh;
     width: 100%;
-    background-image: url("../img/pool2.jpg");
+    /* background-image: url("../img/pool2.jpg"); */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -66,3 +67,16 @@
   ion-icon {
     filter: drop-shadow(0 0 4px white);
   }
+
+h2{
+  color: #fff;
+  /* margin-bottom: 10%; */
+  padding-bottom: 5%;
+}
+
+.typewrite{
+  color: #fff;
+  padding-left: 50px;
+  font-size: 200%;
+
+}
