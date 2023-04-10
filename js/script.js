@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // use jQuery and the ripple.js library to add ripple effects to the page
-    $('.scene-1').ripples({
+    $('.container').ripples({
       // set the parameters of the ripple
       resolution: 256,
       dropRadius: 20,
@@ -18,4 +18,13 @@ $(document).ready(function() {
     sound.addEventListener("ended", function() {
         sound.currentTime = 0;
     });
+      // show the text after 2 seconds
+    setTimeout(function() {
+      $('#text').fadeIn();
+    }, 2000);
+    
+    // hide the text after 5 seconds
+    setTimeout(function() {
+      $('#text').fadeOut();
+    }, 2000);
   });

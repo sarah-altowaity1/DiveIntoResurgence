@@ -11,14 +11,14 @@
     background-image: url("../img/olympic-pool.jpg");
     background-size: cover;
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 .scene-2 .navigation{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* align-items: center;  */
-    grid-row: 4;
+    align-items: center; 
+    grid-row: 2;
 
 }
 .scene-2 .navigation .arrow-back{
@@ -38,10 +38,9 @@ ion-icon {
 }
 
 .kid{
-    position: absolute;
     left: 0;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
 }
 
 #kid{
@@ -59,7 +58,8 @@ ion-icon {
     }
 }
 .instructions{
-    grid-row: 5;
+    align-items: center; 
+    grid-row: 3;
 }
 .instructions h1{
     color: rgb(43, 16, 81);

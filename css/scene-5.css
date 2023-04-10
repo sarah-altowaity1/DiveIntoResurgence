@@ -6,39 +6,46 @@
     text-decoration: none;
 }
 
-body{
-    background-color: aqua;
-}
 
-.scene-5{
+.container{
+    background-color: aqua;
+    background-image: url("../img/water.jpg");
+    background-size: cover;
     height: 100vh;
     width: 100%;
-    background-image: url("../img/water.jpg");
-    /* background: center center; */
-    /* background-color: black; */
-    background-size: cover;
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto auto;
     align-items: center; 
 }
 
-.scene-5 .navigation{
+.container .navigation{
+    grid-row: 2;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
-.scene-5 .navigation .arrow-back{
+.container .navigation .arrow-back{
     padding-left: 2%;
     margin-right: auto;
     font-size: 300%;
     color: white;
 }
-.scene-5 .navigation .arrow-forward{
+.container .navigation .arrow-forward{
     padding-right: 2%;
     margin-left: auto;
     font-size: 300%;
     color: white
 }
+
 ion-icon {
     filter: drop-shadow(0 0 4px white);
-  }
+}
+
+#text{
+    font-weight: 600;
+    filter: drop-shadow(0 0 4px rgb(255, 255, 255));
+    color: rgb(43, 16, 81);
+    grid-row: 3;
+    display: block;
+}
