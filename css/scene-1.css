@@ -47,4 +47,5 @@ ion-icon {
     color: rgb(43, 16, 81);
     grid-row: 3;
     display: block;
+    font-size: 2vw;
 }

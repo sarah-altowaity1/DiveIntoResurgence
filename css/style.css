@@ -83,10 +83,11 @@ h2{
 h3{
     color: #f8ff79;
     font-weight: 300;
+    font-size: 1vw;
 }
 h4{
     color: #fff;
-    font-size: 1em;
+    font-size: 1vw;
     font-weight: 300;
 }
 section .duck{
