@@ -1,17 +1,7 @@
-// $(document).ready(function() {
-//     $('.scene-1').ripples({
-//         resolution: 256,
-//         dropRadius: 20,
-//         perturbance: 0.03
-//     });
-// });
-
-// window.onload=function(){
-//     document.getElementById("sound").play();
-// }
-
 $(document).ready(function() {
+    // use jQuery and the ripple.js library to add ripple effects to the page
     $('.scene-1').ripples({
+      // set the parameters of the ripple
       resolution: 256,
       dropRadius: 20,
       perturbance: 0.03

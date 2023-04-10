@@ -16,8 +16,8 @@ Image by <a href="https://www.freepik.com/free-vector/flat-yellow-rubber-duck-ha
     <title>Dive Into Resurgence</title>
 </head>
 <body>
-
-    <div class = 'button'>
+    <!-- div for text with animation -->
+    <div class = 'text'>
         <center>
             <h1> 
                 A Dive 
@@ -27,7 +27,8 @@ Image by <a href="https://www.freepik.com/free-vector/flat-yellow-rubber-duck-ha
             </h1>
         </center>
     </div>
-    <div class ="button2">
+    <!-- div for text without animation -->
+    <div class ="text2">
         <center>
             <h2> 
                 Into Resurgence
@@ -43,7 +44,7 @@ Image by <a href="https://www.freepik.com/free-vector/flat-yellow-rubber-duck-ha
             </h4>
         </center>
     </div>
-
+    <!-- section for wave animation and duck  -->
     <section> 
         <div class="wave wave1"> </div>
         <div class="wave wave2"> </div>
@@ -61,7 +62,10 @@ Image by <a href="https://www.freepik.com/free-vector/flat-yellow-rubber-duck-ha
         <div class="wave wave4"> </div>
 
     </section>
+    <!-- upper right alert sign to open overlay summary  -->
     <ion-icon name="alert-circle-outline" onclick="toggleSummary()"></ion-icon> 
+    
+    <!-- div for the overlay summary  -->
     <div class ="overlay-summary">
         <div class="close-btn" onclick="toggleSummary()">&times;</div>
         <p>
@@ -73,6 +77,7 @@ Image by <a href="https://www.freepik.com/free-vector/flat-yellow-rubber-duck-ha
 
     </div>
     <script>
+        // javascript code to expose the summary overlay 
         function toggleSummary(){
             document.body.classList.toggle('activeSummary');
         }
