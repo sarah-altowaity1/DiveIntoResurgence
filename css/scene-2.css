@@ -42,10 +42,8 @@ ion-icon {
     left: 0;
     height: 100vh;
     width: 100vw;
-    /* display: grid;
-    grid-template-rows: auto auto auto auto auto auto; */
-
 }
+
 #kid{
     position: absolute;
     display: flex;
@@ -64,7 +62,7 @@ ion-icon {
     grid-row: 5;
 }
 .instructions h1{
-    color: red;
+    color: rgb(43, 16, 81);
     font-weight: 1000;
     font-size: 200%;
 }
