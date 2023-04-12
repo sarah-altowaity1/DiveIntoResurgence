@@ -16,7 +16,7 @@ display grid of 3 rows helps place the navigation div of the container in the ce
     display: grid;
     grid-template-rows: auto auto auto;
     background-color: aqua;
-    background-image: url("../img/water6.jpg");
+    background-image: url("../img/water2.jpg");
     background-size: cover;
 }
 
