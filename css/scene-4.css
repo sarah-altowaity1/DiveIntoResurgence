@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
 }
-/* 
-div{
-    position: absolute;
-} */
+
+/* section positiong relative with items in center */ 
 section{
     position: relative;
     width: 100%;
@@ -17,6 +15,7 @@ section{
     align-items: center;
 }
 
+/* bubble styling */
 section span{
     position: absolute;
     bottom: -50px;
@@ -28,7 +27,7 @@ section span{
     animation: animate 4s linear infinite;
 }
 
-
+/* add bubble shine for more realistic look */
 section span:before{
     content: '';
     position: absolute;
@@ -39,6 +38,7 @@ section span:before{
     border-radius: 50%;
 }
 
+/* move bubbles up animation*/
 @keyframes animate {
     0%{ 
         transform: translateY(0%);
@@ -53,6 +53,10 @@ section span:before{
     }
     
 }
+
+/* 
+ set navigation items to be in the center with space in between 
+*/
 .navigation{
     position: absolute;
     width: 100%;
@@ -60,18 +64,24 @@ section span:before{
     justify-content: space-between;
     align-items: center; 
 }
+
+/* back arrow styling */
 .navigation .arrow-back{
     padding-left: 2%;
     margin-right: auto;
     font-size: 300%;
     color: white;
 }
+
+/* forward arrow styling */
 .navigation .arrow-forward{
     padding-right: 2%;
     margin-left: auto;
     font-size: 300%;
     color: white
 }
+
+/* icon styling with white shadow for glow effect */
 ion-icon {
     filter: drop-shadow(0 0 4px white);
 }

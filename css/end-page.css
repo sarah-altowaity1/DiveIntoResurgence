@@ -1,82 +1,70 @@
+/* styling for all elements */ 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', 'sans-serif';
-    text-decoration: none;
-    background: #1f2028;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+  text-decoration: none;
 }
 
+/* display flex for end page divs, set background color and width*/
 .end-page{
-    height: 100vh;
-    width: 100%;
-    /* background-image: url("../img/pool2.jpg"); */
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  background: #1f2028;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   
-  .centered-text {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: white;
-  }
-  
-  .centered-text p {
-    font-size: 2.0rem;
-    line-height: 2rem;
-    margin-bottom: 5rem;
-  }
-  
-  .back-to-home-button {
-    display: block;
-    width: 20rem;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 2px solid white;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .back-to-home-button:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-  }
-  
-  .end-page .navigation{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-  }
-  
-  .end-page .navigation .arrow-back{
-    padding-left: 2%;
-    margin-right: auto;
-    font-size: 300%;
-    color: white;
-  }
-  
-  ion-icon {
-    filter: drop-shadow(0 0 4px white);
-  }
+/* styling for centered-text div*/
+.centered-text {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
 
+/* styling for centered-text text elements*/
+.centered-text p {
+  font-size: 2.0rem;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+}
+  
+/* button styling, rounded white corners and set margin, padding, and font weight */
+.back-to-home-button {
+  display: block;
+  width: 20rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+  
+/* button turns white and text turns black upon hover*/
+.back-to-home-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* set padding for h2*/
 h2{
-  color: #fff;
-  /* margin-bottom: 10%; */
   padding-bottom: 5%;
 }
 
+/* set typewrite text styling and padding */
 .typewrite{
   color: #fff;
   padding-left: 50px;
   font-size: 200%;
+  padding-top: 5%;
 
 }

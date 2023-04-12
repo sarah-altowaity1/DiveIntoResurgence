@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+/* set background image and size of container div
+display grid of 3 rows helps place the navigation div of the container in the center 
+*/
 .container{
     height: 100vh;
     width: 100%;
@@ -17,7 +20,10 @@
     background-size: cover;
 }
 
-
+/* 
+1. set grid row to middle row 
+2. set navigation items to be in the center with space in between 
+*/
 .container .navigation{
     grid-row: 2;
     width: 100%;
@@ -25,22 +31,29 @@
     justify-content: space-between;
     align-items: center; 
 }
+
+/* back arrow styling */
 .container .navigation .arrow-back{
     padding-left: 2%;
     margin-right: auto;
     font-size: 300%;
     color: white;
 }
+
+/* forward arrow styling */
 .container .navigation .arrow-forward{
     padding-right: 2%;
     margin-left: auto;
     font-size: 300%;
     color: white
 }
+
+/* icon styling with white shadow for glow effect */
 ion-icon {
     filter: drop-shadow(0 0 4px white);
   }
 
+ /* text styling*/
 #text{
     font-weight: 600;
     filter: drop-shadow(0 0 4px rgb(255, 255, 255));

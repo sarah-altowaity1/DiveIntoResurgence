@@ -3,16 +3,19 @@ body{
     overflow: hidden;
 }
 
+/* make sure positioning for all divs is absolute*/
 div{
     position: absolute;
 }
 
+/* sky div background styling */
 .sky{
     height: 40%;
     width: 100%;
     background: linear-gradient(to bottom, #037ccb 0%,  #82ccef 100%);
 }
 
+/*  add clout animation eveny 60s */
 .cloud{
     right: 0;
     position: absolute;
@@ -20,30 +23,18 @@ div{
     animation: cloud 60s infinite;
 }
 
+/* translating X every frame for cloud movement effect  */
 @keyframes cloud {
     0%{
         transform: translateX(0);
     }
-    /* 50%{
-        transform: translateX(20%);
-    } */
     100%{
         transform: translateX(40%)
     }
-    /* 0%{
-        transform: scaleX(1);
-    }
-    35%{
-        transform: scaleX(1.3);
-    }
-    69%{
-        transform: scaleX(1);
-    }
-    100%{
-        transform: scaleX(1);
-    } */
     
 }
+
+/* sea div background styling */
 .sea{
     height: 30%;
     width: 200%;
@@ -56,6 +47,7 @@ div{
     overflow: hidden;
 }
 
+/* wave animation by expanding the div y axis every frame */
 @keyframes wave {
     0%{
         transform: scaleY(1);
@@ -70,6 +62,8 @@ div{
         transform: scaleY(1);
     }
 }
+
+/* seafoam  div background styling */
 .seafoam{
     height: 100%;
     width: 100%;
@@ -77,6 +71,7 @@ div{
     animation: seafoam ease-in-out 10s infinite;
 }
 
+/* seafoam  opacity changes gradually within every frame for foaming effect */
 @keyframes seafoam {
 
     0%{
@@ -96,6 +91,7 @@ div{
     }
 }
 
+/* sand div background styling */
 .sand{
     height: 35%; 
     width: 100%; 
@@ -103,6 +99,7 @@ div{
     top: 65%;
 }
 
+/* sand front div background styling */
 .sand-front{
     height: 10%;
     width:100%;
@@ -110,6 +107,7 @@ div{
     top:90%;
 }
 
+/* wet sand div background styling */
 .wet-sand{
     height: 37.5%;
     width: 200%; 
@@ -121,6 +119,7 @@ div{
     animation: wetsand ease-in-out 10s infinite;
 }
 
+/* wet sand  opacity changes gradually within every frame for wet sand drying effect*/
 @keyframes wetsand {
 
     0%{
@@ -137,6 +136,9 @@ div{
     }
 }
 
+/* 
+ set navigation items to be in the center with space in between 
+*/
 .navigation{
     padding-top: 45vh;
     width: 100%;
@@ -144,18 +146,24 @@ div{
     justify-content: space-between;
     align-items: center; 
 }
+
+/* back arrow styling */
 .navigation .arrow-back{
     padding-left: 2%;
     margin-right: auto;
     font-size: 300%;
     color: white;
 }
+
+/* forward arrow styling */
 .navigation .arrow-forward{
     padding-right: 2%;
     margin-left: auto;
     font-size: 300%;
     color: white
 }
+
+/* icon styling with white shadow for glow effect */
 ion-icon {
     filter: drop-shadow(0 0 4px white);
 }

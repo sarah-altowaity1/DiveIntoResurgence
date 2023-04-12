@@ -9,23 +9,25 @@
     <!-- Link to CSS stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Javascript files -->
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/jquery.ripples.js"></script>
-    <!-- <script src="js/script.js"> </script> -->
     <script src="js/sound.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Scene 2</title>
 </head>
 <body>
-
+    <!-- audio to be played in scene  -->
     <audio src="audio/final/Chapter2-DiveIntoResurgence.mp3" id="sound" loop="loop" autoplay="autoplay" type="audio/mp3"></audio>
-
+    <!-- div of scene elements  -->
     <div class="scene-2">  
+        <!-- kid div -->
         <div class="kid" > 
             <a href="#">
                 <img id="kid" src="img/kid-swimming.png" alt=""  width="70%">
             </a>
         </div>
+        <!-- navigation div -->
         <div class="navigation">
             <a class="arrow-back" href="scene-1.html">
                 <ion-icon name="arrow-back-circle-outline"></ion-icon>
@@ -34,6 +36,7 @@
                 <ion-icon name="arrow-forward-circle-outline"></ion-icon>    
             </a>
         </div>
+        <!-- instuctions div  -->
         <div class='instructions'> 
             <center>
                 <h1 id="heading">
@@ -46,6 +49,8 @@
 
 
     <script>
+        /* this function checks whether the element has gone off screen by checking if any of the 
+        bounds of clientRec of the element are beyond the screen */
         function isElementOffScreen(element) {
         const rect = element.getBoundingClientRect();
         const viewWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -59,27 +64,26 @@
         );
         }
 
+        /* this function moves the kid element by 50 pixels everytime the space bar is pressed */
         function move() {
             if (event.keyCode === 32 || event.which === 32) {
                 // code to be executed when space bar is pressed
                 var kidpos = document.getElementById('kid').offsetLeft
                 kidpos = kidpos + 50
                 document.getElementById('kid').style.left = kidpos + 'px'
-                if (isElementOffScreen(document.getElementById('kid'))) {
+                if (isElementOffScreen(document.getElementById('kid'))) { // if the kid has gone off screen 
                     const myHeading = document.getElementById("heading");
-                    myHeading.textContent = "YOU DID IT!";
-                    document.getElementById('kid').style.left = 0
-                    if (myHeading.textContent != "YOU DID IT!") {
+                    myHeading.textContent = "YOU DID IT!"; // change text to "YOU DID IT! "
+                    document.getElementById('kid').style.left = 0 // set the positon of the kid back to the start 
+                    if (myHeading.textContent != "YOU DID IT!") { // stop moving the kid if the kid managed to get across the pool 
                         document.addEventListener('keydown', move)
                     } else {
-                        document.removeEventListener('keydown', move)
+                        document.removeEventListener('keydown', move) // remove event listener if the user successfully got the kid across the pool 
                     }
                 }
             }
         }
-
-        document.addEventListener('keydown', move);
-
+        document.addEventListener('keydown', move); // add event listener on the document 
     </script>
 </body>
 </html>
